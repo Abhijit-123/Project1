@@ -2,10 +2,12 @@
 Use switch case to return a grade for the score, either "A", "B", "C", "D", or "F". (Take convension for numbers
 and grades by yourself)Anything below 50 is F.
 */
-let marksParcent = window.prompt(`enter marks percentage`);
-marksParcent = Number(marksParcent);
-let grade;
-let result;
+
+let checkPersentage = () =>{
+    let marksParcent = window.prompt(`enter marks percentage`);
+    marksParcent = Number(marksParcent);
+    let grade;
+    let result;
 
     if(marksParcent>80){
         grade='A';
@@ -45,3 +47,4 @@ let result;
         } 
         
     document.write(result);
+}
